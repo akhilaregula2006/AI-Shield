@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "rows": 289726,
+  "columns": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "log_amount",
+    "hour_sin",
+    "hour_cos",
+    "Class"
+  ],
+  "fraud_rate": 0.0020467614228616,
+  "sha256": "b90b6822e481189ee0d02e92a5e5a3611fdf9d7542db7a9e7ac63b4088b8f764",
+  "source": "production-feedback",
+  "created_at": "2026-09-30T12:34:51.514461+00:00",
+  "history": [
+    {
+      "version": 1,
+      "rows": 283726,
+      "sha256": "2785b5fc7e296f43016b5fc91688e6b6aaa5435ca15beedc7bb675390c03ad50",
+      "created_at": "2026-09-30T12:34:25.625922+00:00"
+    }
+  ]
+}

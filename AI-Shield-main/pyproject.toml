@@ -1,0 +1,42 @@
+[project]
+name = "aishield"
+version = "0.1.0"
+description = "Real-time fraud detection MLOps platform with drift detection, self-healing, and an LLM copilot."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_third_party = ["mlflow"]  # repo has a top-level mlflow/ data dir that would shadow the package
+
+[tool.pylint.main]
+disable = [
+  "missing-module-docstring",
+  "missing-function-docstring",  # FastAPI handlers/pydantic models are self-describing
+  "missing-class-docstring",
+  "too-few-public-methods",
+  "global-statement",            # module-level singletons (logger, rate limiter)
+]
+max-line-length = 100
+
+[tool.pylint.design]
+max-args = 8
+max-positional-arguments = 8
+max-locals = 25
+max-attributes = 12
+max-returns = 10
+
+[tool.pylint.imports]
+known-third-party = ["mlflow"]
+
+[tool.pyright]
+extraPaths = ["."]
+
